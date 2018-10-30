@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PackageId>SharpBotCore</PackageId>
-    <PackageVersion>1.0.0-alpha5</PackageVersion>
+    <PackageVersion>1.0.0-alpha7</PackageVersion>
     <Authors>Ashley Poole</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Initial release. Pre-production alpha release.</PackageReleaseNotes>
@@ -25,8 +25,9 @@
   <!--Work around for dotnet pack not including referenced projects-->
   <ItemGroup>
     <BuildOutputInPackage Include="$(OutputPath)SharpBotCore.Bot.Domain.dll" />
-		<BuildOutputInPackage Include="$(OutputPath)SharpBotCore.Messaging.Domain.dll" />
-		<BuildOutputInPackage Include="$(OutputPath)SharpBotCore.Messaging.Slack.dll" />
-		<BuildOutputInPackage Include="$(OutputPath)SharpBotCore.Middleware.Domain.dll" />
+    <BuildOutputInPackage Include="$(OutputPath)SharpBotCore.Messaging.Domain.dll" />
+    <BuildOutputInPackage Include="$(OutputPath)SharpBotCore.Messaging.Slack.dll" />
+    <BuildOutputInPackage Include="$(OutputPath)SharpBotCore.Middleware.Domain.dll" />
+    <PackageReference Include="SlackConnector" Version="4.2.71" />
   </ItemGroup>
 </Project>
