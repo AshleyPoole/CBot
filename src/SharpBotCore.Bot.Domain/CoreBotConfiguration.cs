@@ -2,6 +2,7 @@
 {
 	public class BotConfiguration
 	{
-		public string SlackApiKey { get; }
+		// ReSharper disable once UnusedAutoPropertyAccessor.Global
+		public string SlackApiKey { get; set; }
 	}
 }
