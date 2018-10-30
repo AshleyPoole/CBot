@@ -29,61 +29,29 @@ In your web project, add the NuGet package:
 Install-Package SharpBotCore
 ```
 
-To run SharpBotCore in the background, you'll need to register it as a hosted service. Create a file called `BotHost.cs` and add the following, replacing `SreBot.Web` with your own namespace:
+The easiest way to run SharpBotCore as a Hosted Service in ASP.NET Core. Simply add the below to your service initialisation within `Startup.cs`:
 
 ```csharp
-using System.Threading;
-using System.Threading.Tasks;
 
-using Microsoft.Extensions.Hosting;
-
-using SharpBotCore.Bot;
-
-namespace SreBot.Web
-{
-    public class BotHost : IHostedService
-    {
-        private readonly IBotCore botCore;
-
-        public BotHost(IBotCore botCore)
-        {
-            this.botCore = botCore;
-        }
-
-        public async Task StartAsync(CancellationToken cancellationToken = new CancellationToken())
-        {
-            await this.botCore.Connect();
-        }
-
-        public async Task StopAsync(CancellationToken cancellationToken = new CancellationToken())
-        {
-            await this.botCore.Disconnect();
-        }
-    }
-}
-```
-
-In your `Startup.cs`, under the services registration section, register SharpBotCore:
-
-```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     ...
 
-    services.RegisterSharpBot(this.Configuration.GetSection("Bot"));
-
-    services.AddSingleton<IHostedService, BotHost>();
+    services.RegisterSharpBotCoreAsHostedService(this.Configuration.GetSection("Bot"));
 }
+
 ```
 
 In your application settings file, you will need to create a bot section and populate your Slack API key.
 
 ```plain
+
 {
     "Bot": {
         "SlackApiKey": "YOUR_KEY"
     }
 }
+
 ```
 
 ## Example Project
