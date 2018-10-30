@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBotCore.Messaging.Domain", "src\SharpBotCore.Messaging.Domain\SharpBotCore.Messaging.Domain.csproj", "{AC088403-FE38-44C6-A886-2CE839785BDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBotCore.Bot", "src\SharpBotCore.Bot\SharpBotCore.Bot.csproj", "{D9AED30B-28D5-4A08-A295-EF0F6F239C57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBotCore.Messaging.Slack", "src\SharpBotCore.Messaging.Slack\SharpBotCore.Messaging.Slack.csproj", "{312529FE-2638-4675-9C5D-B9CFE171D533}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBotCore.Bot.Domain", "src\SharpBotCore.Bot.Domain\SharpBotCore.Bot.Domain.csproj", "{0AD06507-D061-40DE-B1E0-AF893F0D58BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBotCore.Messaging.Slack.Tests", "src\SharpBotCore.Messaging.Slack.Tests\SharpBotCore.Messaging.Slack.Tests.csproj", "{2B676D26-5992-44E3-BC4E-C55BEF04D187}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{338D894B-F9F0-4495-95CB-29598475E93F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBotCore.Middleware.Domain", "src\SharpBotCore.Middleware.Domain\SharpBotCore.Middleware.Domain.csproj", "{A07E1742-66EB-401E-97C9-1E59D3B4251F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC088403-FE38-44C6-A886-2CE839785BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC088403-FE38-44C6-A886-2CE839785BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC088403-FE38-44C6-A886-2CE839785BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC088403-FE38-44C6-A886-2CE839785BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9AED30B-28D5-4A08-A295-EF0F6F239C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9AED30B-28D5-4A08-A295-EF0F6F239C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9AED30B-28D5-4A08-A295-EF0F6F239C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9AED30B-28D5-4A08-A295-EF0F6F239C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312529FE-2638-4675-9C5D-B9CFE171D533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312529FE-2638-4675-9C5D-B9CFE171D533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312529FE-2638-4675-9C5D-B9CFE171D533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312529FE-2638-4675-9C5D-B9CFE171D533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD06507-D061-40DE-B1E0-AF893F0D58BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD06507-D061-40DE-B1E0-AF893F0D58BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD06507-D061-40DE-B1E0-AF893F0D58BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD06507-D061-40DE-B1E0-AF893F0D58BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B676D26-5992-44E3-BC4E-C55BEF04D187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B676D26-5992-44E3-BC4E-C55BEF04D187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B676D26-5992-44E3-BC4E-C55BEF04D187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B676D26-5992-44E3-BC4E-C55BEF04D187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07E1742-66EB-401E-97C9-1E59D3B4251F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07E1742-66EB-401E-97C9-1E59D3B4251F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07E1742-66EB-401E-97C9-1E59D3B4251F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07E1742-66EB-401E-97C9-1E59D3B4251F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B676D26-5992-44E3-BC4E-C55BEF04D187} = {338D894B-F9F0-4495-95CB-29598475E93F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D53D5BF0-3C27-4E5A-8387-84A030EA9F56}
+	EndGlobalSection
+EndGlobal
