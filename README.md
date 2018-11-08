@@ -1,10 +1,10 @@
 # CBot
 
-CBot is a SlackBot for C#, originially forked from [Noobot](https://github.com/noobot/noobot).
+CBot is a SlackBot for C#, originally forked from [Noobot](https://github.com/noobot/noobot).
 
 ## About
 
-As mentioned above, CBot is originially forked from [Noobot](https://github.com/noobot/noobot) but has a different take on dependency injection (DI), logging and configuration.
+As mentioned above, CBot is originally forked from [Noobot](https://github.com/noobot/noobot) but has a different take on dependency injection (DI), logging and configuration.
 
 Mainly, the DI container is external from the core bots code, so consumers can more easily extend the framework as they can add their own DI implementation of choice. Logging now uses the `ILogger` interface for easily of implemenation for consumers, and configuration can be consumed more easily.
 
