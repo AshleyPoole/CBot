@@ -1,10 +1,10 @@
-# SharpBotCore, aka SharpBot
+# CBot
 
-SharpBotCore is a SlackBot for C#, originially forked from [Noobot](https://github.com/noobot/noobot).
+CBot is a SlackBot for C#, originially forked from [Noobot](https://github.com/noobot/noobot).
 
 ## About
 
-As mentioned above, SharpBotCore is originially forked from [Noobot](https://github.com/noobot/noobot) but has a different take on dependency injection (DI), logging and configuration.
+As mentioned above, CBot is originially forked from [Noobot](https://github.com/noobot/noobot) but has a different take on dependency injection (DI), logging and configuration.
 
 Mainly, the DI container is external from the core bots code, so consumers can more easily extend the framework as they can add their own DI implementation of choice. Logging now uses the `ILogger` interface for easily of implemenation for consumers, and configuration can be consumed more easily.
 
@@ -21,15 +21,15 @@ I believe these changes allow for improved consumption in .NET Core projects. Cu
 
 ## Installation / Usage
 
-Below are the intructions to add SharpBotCore framework to your ASP.NET Core 2.1 project.
+Below are the intructions to add CBot framework to your ASP.NET Core 2.1 project.
 
 In your web project, add the NuGet package:
 
 ```plain
-Install-Package SharpBotCore
+Install-Package CBot
 ```
 
-The easiest way to run SharpBotCore as a Hosted Service in ASP.NET Core. Simply add the below to your service initialisation within `Startup.cs`:
+The easiest way to run CBot as a Hosted Service in ASP.NET Core. Simply add the below to your service initialisation within `Startup.cs`:
 
 ```csharp
 
@@ -37,7 +37,7 @@ public void ConfigureServices(IServiceCollection services)
 {
     ...
 
-    services.RegisterSharpBotCoreAsHostedService(this.Configuration.GetSection("Bot"));
+    services.RegisterCBotAsHostedService(this.Configuration.GetSection("Bot"));
 }
 
 ```

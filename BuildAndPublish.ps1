@@ -3,15 +3,15 @@ Write-Host "Press enter to continue..."
 
 Read-Host
 
-Push-Location .\src\SharpBotCore.Bot
+Push-Location .\src\CBot.Bot
 
 Write-Host "Removing previous nuget packages"
 Remove-Item .\bin\Release\*.nupkg > $null
 
-Write-Host "Building SharpBotCore"
+Write-Host "Building CBot"
 dotnet pack --configuration Release
 #msbuild /t:pack /p:Configuration=Release
-#nuget pack SharpBotCore.Bot.csproj -IncludeReferencedProjects -Prop Configuration=Release #Works but would need spec file
+#nuget pack CBot.Bot.csproj -IncludeReferencedProjects -Prop Configuration=Release #Works but would need spec file
 
 $nugetPackage = Get-ChildItem .\bin\Release\*.nupkg | Select-Object -First 1
 
