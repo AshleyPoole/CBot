@@ -3,10 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PackageId>CBot</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Ashley Poole</Authors>
+    <Description>Chatbot framework for Slack written in C#.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Initial release. Pre-production alpha release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added package description.</PackageReleaseNotes>
     <PackageTags>CBot csharpbot chatops chatbot bot noobot</PackageTags>
     <PackageProjectUrl>https://github.com/AshleyPoole/CBot</PackageProjectUrl>
     <RepositoryUrl>https://github.com/AshleyPoole/CBot</RepositoryUrl>
