@@ -60,7 +60,7 @@ You can find an example project of how to use the Nuget package in ASP.NET Core 
 
 ## Writing your own customised modules
 
-TBD
+Examples of writing your own modules (resources) can be found in the [public modules repository](https://github.com/AshleyPoole/CBot.Modules).
 
 ## Inprogress / Outstanding
 
